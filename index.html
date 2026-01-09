@@ -2,25 +2,27 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>Открытие формы</title>
+  <title>Discount TV — каталог</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
+
 <body style="font-family: sans-serif; text-align: center; padding: 40px">
 
-<h2>Открываем форму…</h2>
+<h2>Открываем каталог…</h2>
 
 <script>
-  const url = "https://airtable.com/embed/appJmdJbWBZdNxggp/shrAVgyFnFGageMD9";
+  const url = "https://airtable.com/appJmdJbWBZdNxggp/shrrbnhGmpl7r4eez";
   const ua = navigator.userAgent.toLowerCase();
 
   if (ua.includes("android")) {
     window.location.href =
-      "intent://airtable.com/embed/appJmdJbWBZdNxggp/shrAVgyFnFGageMD9#Intent;scheme=https;package=com.android.chrome;end";
+      "intent://airtable.com/appJmdJbWBZdNxggp/shrrbnhGmpl7r4eez#Intent;scheme=https;package=com.android.chrome;end";
   } else {
     document.body.innerHTML = `
-      <h2>Откройте форму в браузере</h2>
+      <h2>Открыть каталог Discount TV</h2>
       <p>Нажмите кнопку ниже</p>
-      <a href="${url}" style="
+
+      <a href="${url}" target="_blank" style="
         display:inline-block;
         padding:14px 20px;
         background:#007aff;
@@ -29,13 +31,13 @@
         border-radius:8px;
         font-size:18px;
       ">Открыть в браузере</a>
-      <p style="margin-top:20px;color:#666">
-        Если открылось внутри Telegram — нажмите «⋯» → Открыть в браузере
+
+      <p style="margin-top:20px;color:#666;font-size:14px">
+        Если страница открылась внутри Telegram — нажмите «⋯» → Открыть в браузере
       </p>
     `;
   }
 </script>
-
 
 </body>
 </html>
