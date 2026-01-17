@@ -11,15 +11,15 @@
 <h2>Открываем каталог…</h2>
 
 <script>
-  const url = "https://airtable.com/embed/appJmdJbWBZdNxggp/shrYNE2SXJfo5aJwk";
+  const url = "https://www.appsheet.com/start/401083fc-3f8b-4fbf-88fd-74591e01f8b0";
   const ua = navigator.userAgent.toLowerCase();
 
-  // Android — пытаемся выкинуть во внешний Chrome
+  // Android — выкидываем во внешний Chrome
   if (ua.includes("android")) {
     window.location.href =
-      "intent://airtable.com/embed/appJmdJbWBZdNxggp/shrYNE2SXJfo5aJwk#Intent;scheme=https;package=com.android.chrome;end";
+      "intent://www.appsheet.com/start/401083fc-3f8b-4fbf-88fd-74591e01f8b0#Intent;scheme=https;package=com.android.chrome;end";
   } else {
-    // iOS / всё остальное — показываем кнопку
+    // iOS / всё остальное
     document.body.innerHTML = `
       <h2>Открыть каталог Discount TV</h2>
       <p>Нажмите кнопку ниже</p>
