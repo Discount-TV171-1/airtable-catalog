@@ -14,7 +14,7 @@
   const url = "https://www.appsheet.com/start/401083fc-3f8b-4fbf-88fd-74591e01f8b0";
   const ua = navigator.userAgent.toLowerCase();
 
-  // Android — выкидываем во внешний Chrome
+  // Android — открываем во внешнем браузере (Chrome)
   if (ua.includes("android")) {
     window.location.href =
       "intent://www.appsheet.com/start/401083fc-3f8b-4fbf-88fd-74591e01f8b0#Intent;scheme=https;package=com.android.chrome;end";
